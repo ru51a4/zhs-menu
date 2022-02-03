@@ -1,7 +1,6 @@
 <html>
 <head>
-d    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 </head>
 <body>
 <div class="row">
@@ -75,7 +74,7 @@ d    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap
     while (queue.length) {
         let item = queue.shift();
         let displaynone = (cLvl > 1) ? 'display:none' : ''
-        let next= (item.childrens.length) ? "->" : "";
+        let next = (item.childrens.length) ? "->" : "";
         html += `
                 <div lvl="${cLvl}" data="${item.title}" parrent="${item.parrent}" style="${displaynone}" class="zhs-menu--items--item">
                     ${item.title}
