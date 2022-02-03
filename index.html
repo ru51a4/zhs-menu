@@ -4,12 +4,38 @@
     <script src="./lib/zhsmenu.js"></script>
 </head>
 <body>
-<div class="row">
-    <div class="app">
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Simple header</span>
+        </a>
 
-    </div>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item zhs-menu-event"><a href="#" class="nav-link">zhs-menu</a>
+                <div class="app"></div>
+            </li>
+
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+    </header>
 </div>
 <style>
+    .app {
+        position: absolute;
+        z-index: 100;
+        background: white;
+        display: none;
+    }
+
+    .zhs-menu-event:hover .app {
+        display: block;
+    }
 
     .zhs-menu {
         display: flex;
@@ -32,14 +58,19 @@
         childrens: [{
             title: "фронтенд", childrens: [
                 {title: "vue", childrens: []},
-                {title: "react", childrens: []}
+                {title: "react", childrens: []},
+                {title: "angular", childrens: []}
             ]
         }, {
             title: "бекенд", childrens: [
                 {
                     title: "laravel", childrens: [
                         {title: "admin", childrens: []},
-                        {title: "superadmin", childrens: []}
+                        {
+                            title: "superadmin", childrens: [
+                                {title: "nova", childrens: []}
+                            ]
+                        }
                     ]
                 },
                 {title: "yii", childrens: []}
