@@ -57,28 +57,32 @@
         color: #fff;
         background-color: #0d6efd;
     }
+    .zhs-menu .zhs-menu--items--item a{
+        color: white;
+        text-decoration: none;
+    }
 </style>
 <script>
     let menu = {
         childrens: [{
             title: "фронтенд", childrens: [
-                {title: "vue", childrens: []},
-                {title: "react", childrens: []},
-                {title: "angular", childrens: []}
+                {title: "vue", childrens: [], url: "https://ya.ru"},
+                {title: "react", childrens: [], url: "https://ya.ru"},
+                {title: "angular", childrens: [], url: "https://ya.ru"}
             ]
         }, {
             title: "бекенд", childrens: [
                 {
                     title: "laravel", childrens: [
-                        {title: "admin", childrens: []},
+                        {title: "admin", childrens: [], url: "https://ya.ru"},
                         {
                             title: "superadmin", childrens: [
-                                {title: "nova", childrens: []}
+                                {title: "nova", childrens: [], url: "https://ya.ru"}
                             ]
                         }
                     ]
                 },
-                {title: "yii", childrens: []}
+                {title: "yii", childrens: [], url: "https://ya.ru"}
             ]
         }]
     };
